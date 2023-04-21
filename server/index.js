@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 const cryptography = require("./cryptography");
 
-server.listen(PROCESS.ENV.PORT || PORT, () => console.log("running on port 3001"));
+server.listen(process.env.PORT || PORT, () => console.log("running on port 3001"));
 const { Server } = require("socket.io");
 const io = new Server(server, {
     cors: {
