@@ -55,10 +55,10 @@ io.on("connection", (socket) => {
 });
 //add relevant details below
 const db = mysql.createConnection({
-    user: process.env.user, // write your mysql user here
-    host: process.env.host, //write your host name here
-    password: process.env.password, //write your password here
-    database: process.env.database, //write your database name here
+    user: process.env.USER, // write your mysql user here
+    host: process.env.HOST, //write your host name here
+    password: process.env.PASSWORD, //write your password here
+    database: process.env.DATABASE, //write your database name here
 });
 // const db = mysql.createConnection(
 //     "mysql://root:VyFy1UKkIhNNnhKGRZ7N@containers-us-west-74.railway.app:6086/railway"
